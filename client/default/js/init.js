@@ -32,7 +32,7 @@ $fh.ready(function() {
 function auth(user, pass, cb) {
   $fh.auth({
     "policyId": "EC2LDAP",
-    "clientToken": "0CnwYKgpGI33wtpMAW4iD4ys", // Your App GUID
+    "clientToken": $fh.app_props.appid, // Your App GUID
     "endRedirectUrl": window.location.href,
     "params": {
       "userId": user,
