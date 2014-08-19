@@ -11,8 +11,8 @@ $fh.ready(function() {
   document.getElementById('localConfig').innerHTML = "<p>" + JSON.stringify(config) + "</p>";
 
   document.getElementById('run_button').onclick = function() {
-    var user = document.getElementById('username').value();
-    var pass = document.getElementById('password').value();
+    var user = document.getElementById('username').value;
+    var pass = document.getElementById('password').value;
 
     document.getElementById('cloudConfig').innerHTML = "<p>called auth with: " + JSON.stringify({u: user, p: pass}) + "</p>";
     auth(user, pass, function (err, res) {
