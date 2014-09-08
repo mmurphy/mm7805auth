@@ -31,7 +31,7 @@ $fh.ready(function() {
 
 function auth(user, pass, cb) {
   $fh.auth({
-    "policyId": "EC2LDAP",
+    "policyId": "FeedHenry",
     "clientToken": $fh.app_props.appid, // Your App GUID
     "endRedirectUrl": window.location.href,
     "params": {
